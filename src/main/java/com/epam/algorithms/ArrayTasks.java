@@ -113,7 +113,7 @@ public class ArrayTasks {
      */
     public int[][] sortRaggedArray(int[][] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr[i].length - i - 1; j++) {
+            for (int j = 0; j < arr.length - i - 1; j++) {
                 if (arr[j + 1].length < arr[j].length) {
                     int[] swap = arr[j];
                     arr[j] = arr[j + 1];
